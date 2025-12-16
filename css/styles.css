@@ -48,6 +48,18 @@ img {
   display: block;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .topbar {
   position: sticky;
   top: 0;
@@ -81,6 +93,10 @@ img {
   border-radius: 10px;
   font-weight: 600;
   color: var(--muted);
+}
+
+[data-theme="dark"] .nav a {
+  color: #dcdcdc;
 }
 
 .nav a.active {
@@ -125,6 +141,33 @@ img {
   display: grid;
   gap: 24px;
   align-items: start;
+}
+
+.hero-visual {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin: 10px 0 16px;
+}
+
+.hero-visual .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+:root .hero-visual .day {
+  display: block;
+}
+
+[data-theme="dark"] .hero-visual .day {
+  display: none;
+}
+
+[data-theme="dark"] .hero-visual .night {
+  display: block;
 }
 
 .hero-content h1 {
@@ -236,6 +279,19 @@ img {
   background: transparent;
   color: var(--text);
   border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .btn.ghost {
+  background: #111111;
+  border-color: #2a2a2a;
+  color: #f5f5f5;
+}
+
+[data-theme="dark"] .btn.primary.ghost {
+  background: var(--primary);
+  color: #050505;
+  border-color: var(--primary);
+  box-shadow: var(--shadow);
 }
 
 .mini-note,
