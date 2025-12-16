@@ -1,0 +1,431 @@
+<!--
+  PDF del temario enlazado: ./Archivos/Curso_ Análisis de Datos con Python.pdf (cámbialo si renombraras el archivo).
+  Foto del instructor enlazada: ./Archivos/fotomia.webp (cámbiala si usas otra imagen).
+  Para ajustar textos o datos: edita directamente el contenido de cada sección en este archivo.
+-->
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Análisis de Datos con Python</title>
+  <link rel="icon" type="image/png" href="./Archivos/favicon.png">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <div class="logo" tabindex="0">Curso Análisis de Datos con Python</div>
+    <nav class="nav" id="navMenu">
+      <a href="#inicio">Inicio</a>
+      <a href="#temario">Temario</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#precio">Precio</a>
+      <a href="#instructor">Instructor</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn primary ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSdbE94od1IDRYKUaYMxm4iZGGKeME-HDj1bS2y2whUJ8K4oNg/viewform?usp=header" target="_blank" rel="noopener">Inscribirme</a>
+    </nav>
+    <div class="actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo día/noche" aria-pressed="false">☀️</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section fade" data-observe>
+      <div class="hero-content">
+        <p class="eyebrow">Modalidad en línea · Clases en vivo</p>
+        <h1>De cero a un análisis completo con Python en 4 semanas</h1>
+        <p class="subtitle">Enfoque 100% práctico con VS Code notebooks, datasets reales y acompañamiento cercano.</p>
+        <div class="badges">
+          <span>Inicia: 5 Ene 2026</span>
+          <span>L-M-V 4–6 pm (CDMX)</span>
+          <span>Online</span>
+          <span>$299 MXN</span>
+        </div>
+        <div class="countdown" aria-live="polite">
+          <div class="count-item">
+            <span id="days">--</span>
+            <small>Días</small>
+          </div>
+          <div class="count-item">
+            <span id="hours">--</span>
+            <small>Horas</small>
+          </div>
+          <div class="count-item">
+            <span id="minutes">--</span>
+            <small>Minutos</small>
+          </div>
+          <div class="count-item">
+            <span id="seconds">--</span>
+            <small>Segundos</small>
+          </div>
+          <p class="countdown-message" id="countdownMessage"></p>
+        </div>
+        <div class="cta-group">
+          <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdbE94od1IDRYKUaYMxm4iZGGKeME-HDj1bS2y2whUJ8K4oNg/viewform?usp=header" target="_blank" rel="noopener">Inscribirme</a>
+          <a class="btn secondary" href="./Archivos/Curso_%20Análisis%20de%20Datos%20con%20Python.pdf" target="_blank" rel="noopener">Descargar temario completo</a>
+        </div>
+        <p class="mini-note">Incluye certificado + grabaciones + notas PDF</p>
+      </div>
+      <div class="hero-side card fade" data-observe>
+        <h3>Datos clave del curso</h3>
+        <ul class="course-info">
+          <li><strong>Nombre:</strong> Análisis de Datos con Python (VS Code + Notebooks)</li>
+          <li><strong>Modalidad:</strong> En línea (clases en vivo)</li>
+          <li><strong>Duración:</strong> 4 semanas (12 sesiones)</li>
+          <li><strong>Días:</strong> Lunes, Miércoles y Viernes</li>
+          <li><strong>Horario:</strong> 4:00 pm – 6:00 pm (hora CDMX)</li>
+          <li><strong>Inicio:</strong> Lunes 5 de enero de 2026</li>
+          <li><strong>Costo:</strong> $299 MXN</li>
+          <li><strong>Incluye:</strong> Certificado, sesiones grabadas, notas en PDF</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="instructor" class="section instructor fade" data-observe>
+      <div class="media">
+        <img src="./Archivos/fotomia.webp" alt="Foto del instructor Alejandro" class="instructor-photo">
+      </div>
+      <div class="content">
+        <p class="eyebrow">¿Quién soy?</p>
+        <h2>Tu guía en el curso</h2>
+        <p>Soy Alejandro, estudiante de Física en la UNAM (Facultad de Ciencias). Enseño análisis de datos de manera práctica: aprendes haciendo con notebooks y ejercicios guiados.</p>
+        <p>En cada sesión me enfoco en: acompañarte en vivo, revisar tus notebooks, responder dudas concretas y darte feedback sobre visualizaciones y storytelling. Todo queda grabado y con notas en PDF para que avances a tu ritmo.</p>
+        <div class="highlights">
+          <div>
+            <h4>Metodología</h4>
+            <p>Explicación breve, demo en notebook, ejercicio guiado y reto corto al final. Revisión de tus resultados en vivo.</p>
+          </div>
+          <div>
+            <h4>Soporte</h4>
+            <p>Chat del grupo para dudas entre sesiones, ejemplos adicionales y datasets sugeridos para practicar.</p>
+          </div>
+        </div>
+        <div class="pill-grid">
+          <div class="pill card">Enfoque práctico</div>
+          <div class="pill card">Material descargable</div>
+          <div class="pill card">Proyecto final para portafolio</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="temario" class="section fade" data-observe>
+      <div class="section-header">
+        <p class="eyebrow">¿Qué vas a aprender?</p>
+        <h2>Bloques clave del curso</h2>
+        <p class="section-subtitle">Desde la instalación hasta el storytelling con datos, listo para aplicar en proyectos reales.</p>
+      </div>
+      <div class="learning-grid">
+        <div class="card">Setup VS Code + notebooks</div>
+        <div class="card">Python esencial para análisis</div>
+        <div class="card">NumPy</div>
+        <div class="card">Pandas: limpieza, joins, groupby, pivot, fechas</div>
+        <div class="card">Visualización</div>
+        <div class="card">EDA + storytelling</div>
+        <div class="card">Proyecto final</div>
+      </div>
+
+      <div class="section-header">
+        <p class="eyebrow">Temario completo (12 sesiones)</p>
+        <h1>Abre cada sesión y revisa el plan</h1>
+      </div>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 1 · Sesión 1 · Configuración y flujo de trabajo</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Instalación de VS Code y extensiones para notebooks.</li>
+              <li>Atajos básicos, entorno virtual y organización de proyectos.</li>
+              <li>Primer notebook y estructura de carpetas.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 1 · Sesión 2 · Python esencial para análisis</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Tipos de datos, listas, diccionarios y control de flujo.</li>
+              <li>Funciones, módulos y manejo de errores.</li>
+              <li>Buenas prácticas y legibilidad.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 1 · Sesión 3 · NumPy: arreglos y operaciones vectorizadas</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Creación y manipulación de arrays.</li>
+              <li>Indexación, slicing y broadcasting.</li>
+              <li>Operaciones matemáticas y estadísticas básicas.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 2 · Sesión 4 · Pandas I: lectura y exploración</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Lectura de CSV/Excel y estructuras Series/DataFrame.</li>
+              <li>Selección de columnas, filtrado y ordenamiento.</li>
+              <li>Resumen rápido con describe(), info() y tipos.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 2 · Sesión 5 · Pandas II: limpieza y preparación</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Manejo de nulos, duplicados y tipos de datos.</li>
+              <li>Funciones apply/map y transformaciones.</li>
+              <li>Fechas y tiempos: parsing y operaciones.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 2 · Sesión 6 · Pandas III: joins y agregaciones</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Joins y merges entre tablas.</li>
+              <li>Groupby, agregaciones y pivots.</li>
+              <li>Detección de outliers básicos.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 3 · Sesión 7 · Visualización I</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Gráficas básicas con matplotlib.</li>
+              <li>Personalización de ejes, títulos y estilos.</li>
+              <li>Buenas prácticas de color y etiquetas.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 3 · Sesión 8 · Visualización II y storytelling</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Subplots y layouts para dashboards ligeros.</li>
+              <li>Historias con datos: orden y narrativa.</li>
+              <li>Exportar gráficos listos para compartir.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 3 · Sesión 9 · EDA: exploración guiada</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Pipeline de EDA: preguntas, hipótesis y métricas.</li>
+              <li>Correlaciones y distribuciones.</li>
+              <li>Checklist para detectar problemas comunes.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 4 · Sesión 10 · Proyecto: definición y datasets</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Plantear problema y métricas de éxito.</li>
+              <li>Búsqueda de datasets (Kaggle y fuentes abiertas).</li>
+              <li>Scope y entregables del proyecto.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 4 · Sesión 11 · Proyecto: desarrollo y feedback</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Iteraciones sobre limpieza y visualización.</li>
+              <li>Revisión entre pares y checklist de calidad.</li>
+              <li>Preparar la historia de datos para presentar.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Semana 4 · Sesión 12 · Demo y cierre</button>
+          <div class="accordion-panel">
+            <ul>
+              <li>Presentación de proyectos finales.</li>
+              <li>Retroalimentación y siguientes pasos.</li>
+              <li>Entrega de certificados y recursos finales.</li>
+            </ul>
+            <div class="placeholder">
+              <p>Ejemplo en notebook: [PENDIENTE / LINK]</p>
+              <p>Dataset usado: [PENDIENTE]</p>
+              <p>Mini-reto/tarea: [PENDIENTE]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="horarios" class="section fade" data-observe>
+      <div class="section-header">
+        <p class="eyebrow">Horarios y fechas</p>
+        <h2>Plan claro desde el día 1</h2>
+      </div>
+      <div class="schedule card">
+        <p><strong>Días:</strong> Lunes, Miércoles y Viernes</p>
+        <p><strong>Horario:</strong> 4:00 pm – 6:00 pm (hora CDMX)</p>
+        <p><strong>Duración:</strong> 4 semanas (12 sesiones)</p>
+        <p><strong>Inicio:</strong> Lunes 5 de enero de 2026</p>
+      </div>
+      <div class="dates-grid">
+        <div class="date-card card">
+          <h3>Semana 1</h3>
+          <p>Ene 5, 7, 9</p>
+        </div>
+        <div class="date-card card">
+          <h3>Semana 2</h3>
+          <p>Ene 12, 14, 16</p>
+        </div>
+        <div class="date-card card">
+          <h3>Semana 3</h3>
+          <p>Ene 19, 21, 23</p>
+        </div>
+        <div class="date-card card">
+          <h3>Semana 4</h3>
+          <p>Ene 26, 28, 30</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyecto" class="section fade" data-observe>
+      <div class="section-header">
+        <p class="eyebrow">Proyecto final (Portafolio)</p>
+        <h2>Construye algo que puedas mostrar</h2>
+      </div>
+      <div class="project card">
+        <p>Entrega un análisis reproducible en notebook con visualizaciones claras. Requisito de certificación: 80% de asistencia + proyecto final entregado.</p>
+        <ul>
+          <li>Presentación breve (5-7 minutos) con hallazgos y recomendaciones.</li>
+          <li>Notebook limpio, comentado y con pasos reproducibles.</li>
+          <li>Gráficas legibles y conclusiones accionables.</li>
+        </ul>
+        <div class="ideas">
+          <p><strong>Ideas de proyecto:</strong></p>
+          <p>1) Ventas y ticket promedio de una tienda. 2) Calidad de aire en tu ciudad. 3) Cualquier dataset de Kaggle que te entusiasme.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="precio" class="section fade" data-observe>
+      <div class="price card">
+        <p class="eyebrow">Precio</p>
+        <h2>$299 MXN</h2>
+        <p>Certificado + grabaciones + notas PDF</p>
+        <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdbE94od1IDRYKUaYMxm4iZGGKeME-HDj1bS2y2whUJ8K4oNg/viewform?usp=header" target="_blank" rel="noopener">Inscribirme</a>
+      </div>
+    </section>
+
+    <section id="faq" class="section fade" data-observe>
+      <div class="section-header">
+        <p class="eyebrow">FAQ</p>
+        <h2>Respuestas rápidas</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="card">
+          <h3>¿Necesito experiencia previa?</h3>
+          <p>No. Empezamos desde cero y avanzamos con práctica guiada.</p>
+        </div>
+        <div class="card">
+          <h3>¿Qué pasa si falto?</h3>
+          <p>Recibes la grabación y notas en PDF para ponerte al día.</p>
+        </div>
+        <div class="card">
+          <h3>¿Cómo recibo grabaciones y PDFs?</h3>
+          <p>Se comparten en carpeta organizada tras cada sesión.</p>
+        </div>
+        <div class="card">
+          <h3>¿Cómo es el certificado?</h3>
+          <p>PDF nominal con horas cursadas y validación por el instructor.</p>
+        </div>
+        <div class="card">
+          <h3>¿Qué necesito instalar?</h3>
+          <p>VS Code, Python 3.x y las extensiones para notebooks (te guío en la sesión 1).</p>
+        </div>
+        <div class="card">
+          <h3>¿Es 100% online?</h3>
+          <p>Sí, todas las sesiones son en vivo y con interacción por videollamada.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Contacto: WhatsApp +52 5563670240 · Email alejandr688@gmail.com</p>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdbE94od1IDRYKUaYMxm4iZGGKeME-HDj1bS2y2whUJ8K4oNg/viewform?usp=header" target="_blank" rel="noopener">Inscribirme</a>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
